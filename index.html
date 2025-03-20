@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Flexbox</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0rem;
+        }
+
+        .container {
+            border: 1px solid #bdbbbb;
+            box-shadow: .5rem .5rem .3rem .01rem #bdbbbb;
+            padding: 1rem;
+            height: 30rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+        }
+
+        .item {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            margin: 0rem;
+            padding: 1rem;
+            width: 5rem;
+            height: 3rem;
+        }
+
+        .logo {
+            flex-grow: 1;
+        }
+
+        .titulo-do-site {
+            flex-grow: 12;
+        }
+
+        .menu-sandwich {
+            flex-grow: 1;
+        }
+
+        .cabecalho {
+            display: flex;
+        }
+
+        .painel {
+            display: flex;
+        }
+
+        .menu-lateral {
+            width: 25em;
+        }
+
+        .parte-principal {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 11;
+        }
+
+        .tile {
+            background-color: #dedede;
+            flex-grow: 1;
+            height: 3rem;
+            margin-bottom: .5rem;
+        }
+
+        .tile:hover {
+            background-color: #1fc446;
+            color: white;
+            font-weight: bold;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        img {
+            width: 12rem;
+        }
+
+        .imagem {
+            text-align: center;
+        }
+
+        .cartao {
+            border: 1px solid #bdbbbb;
+            box-shadow: .5rem .5rem .3rem .01rem #bdbbbb;
+            width: 12.1rem;
+            margin: 1rem;
+        }
+
+        .descricao {
+            height: 8rem;
+            padding: 1rem;
+        }
+
+        .preco{
+            text-align: right;
+            padding: 1rem;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="item logo">Logo</div>
+        <div class="item titulo-do-site">Venda de produtos</div>
+        <div class="item menu-sandwich">Menu</div>
+    </header>
+    <section class="painel">
+        <nav class="menu-lateral">
+            <a href="https://www.google.com" target="_blank"><div class="tile">Opção 01</div></a>
+            <a href="https://www.pucminas.br/" target="_blank"><div class="tile">Opção 02</div></a>
+            <a href="https://www.primevideo.com/" target="_blank"><div class="tile">Opção 03</div></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><div class="tile">Opção 04</div></a>
+        </nav>
+        <main class="parte-principal">
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+        </main>
+    </section>
+</body>
+
+</html>
